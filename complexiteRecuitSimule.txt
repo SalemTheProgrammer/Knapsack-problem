@@ -1,0 +1,40 @@
+Initialisation :
+
+Initialiser la solution actuelle de manière aléatoire.
+Définir la température initiale.
+
+
+
+Le but principal de la température est d'introduire une exploration stochastique 
+dans la recherche de solutions. Au début du processus, la température est élevée, 
+ce qui permet à l'algorithme d'accepter plus facilement des solutions voisines même 
+si elles sont moins bonnes que la solution actuelle. Cela donne à l'algorithme 
+la flexibilité nécessaire pour sortir des optima locaux potentiels et 
+explorer un espace de solutions plus large.
+
+
+Itérations :
+
+Pour chaque itération :
+Générer une solution voisine en ajoutant ou retirant aléatoirement un article de la solution actuelle.
+Calculer la valeur de la solution voisine.
+Calculer la probabilité d'acceptation en fonction de la différence de valeur entre la solution actuelle et la solution voisine, ainsi que de la température actuelle.
+Accepter ou rejeter la solution voisine en fonction de la probabilité d'acceptation.
+Mettre à jour la solution actuelle si la solution voisine est acceptée.
+Mettre à jour la meilleure solution si la solution actuelle est meilleure que la précédente meilleure.
+Refroidissement :
+
+Réduire la température à chaque itération pour contrôler le compromis entre exploration et exploitation.
+
+
+
+
+
+Analyse de Complexité :
+Complexité Temporelle :
+
+La complexité temporelle dépend du nombre d'itérations (nombre_iterations).
+Chaque itération implique la génération d'une solution voisine, le calcul de valeurs et la prise de décisions d'acceptation, des opérations généralement linéaires. Par conséquent, la complexité temporelle globale est approximativement O(nombre_iterations).
+Complexité Spatiale :
+
+La complexité spatiale dépend principalement de la taille des structures de données utilisées pour stocker les solutions et les articles. Elle ne dépend pas explicitement du nombre d'itérations et peut être considérée comme O(n), où n est le nombre d'articles.

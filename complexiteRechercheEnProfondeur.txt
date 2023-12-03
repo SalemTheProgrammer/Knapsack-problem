@@ -1,0 +1,20 @@
+Déroulement de l'Algorithme :
+
+Pour chaque article, l'algorithme explore deux possibilités :
+Inclusion de l'article : Appelle récursivement la fonction DFS en ajoutant le poids et la valeur de l'article aux paramètres actuels.
+Exclusion de l'article : Appelle récursivement la fonction DFS sans ajouter le poids et la valeur de l'article.
+Choix de la Solution Optimale :
+
+Compare les valeurs obtenues avec et sans l'inclusion de l'article actuel.
+Retourne la solution maximale parmi les deux.
+Exemple d'Utilisation :
+
+Appelle la fonction knapsack_dfs avec une capacité donnée et affiche la valeur maximale et la liste des articles sélectionnés.
+Complexité :
+Complexité Temporelle :
+
+La complexité temporelle dépend du nombre d'articles (len(items)) et de la capacité du sac à dos (capacite).
+Dans le pire cas, la recherche DFS explore toutes les combinaisons possibles, ce qui donne une complexité exponentielle O(2^n), où n est le nombre d'articles.
+Complexité Spatiale :
+
+La complexité spatiale dépend de la profondeur maximale de la pile d'appels récursifs, ce qui est également exponentiel dans le pire cas.

@@ -1,0 +1,31 @@
+L'algorithme du Sac à Dos Glouton vise à résoudre le problème du sac à dos, 
+où l'objectif est de maximiser la valeur totale des articles tout 
+en respectant une contrainte de poids maximale.
+
+Principe de l'Algorithme:
+Tri des Articles:
+
+Les articles sont triés en fonction du ratio valeur/poids de manière décroissante. 
+Cela signifie que les articles les plus "rentables" (valeur élevée par rapport au poids) 
+sont considérés en premier.
+
+Sélection Gloutonne:
+
+L'algorithme sélectionne les articles un par un, en commençant par les plus "rentables" 
+selon le tri. Chaque article est ajouté au sac à dos tant que la contrainte 
+de poids maximale n'est pas dépassée.
+
+Complexité Temporelle:
+
+Le tri des articles a une complexité temporelle de O(n log n), 
+où n est le nombre d'articles. La sélection gloutonne a une complexité linéaire 
+O(n) car chaque article est considéré une seule fois.
+
+Avantages:
+
+L'algorithme est simple et rapide.
+Il fournit une solution faisable, bien que pas toujours optimale.
+Limitations:
+
+Ne garantit pas toujours la solution optimale.
+Ne prend pas en compte des éléments complexes comme les dépendances entre les articles.

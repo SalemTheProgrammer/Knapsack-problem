@@ -1,0 +1,23 @@
+Lors de l'exécution de cet algorithme génétique pour résoudre 
+le problème du sac à dos, nous commençons par créer une population initiale de solutions 
+potentielles, représentées par des chromosomes. 
+Chaque chromosome est une séquence binaire indiquant quels articles sont inclus dans 
+le sac à dos.
+
+Ensuite, à travers plusieurs générations, 
+nous évaluons la qualité de chaque solution en fonction de sa "fitness" 
+(capacité à respecter la contrainte de poids et à maximiser la valeur). 
+Les parents sont sélectionnés en fonction de leur fitness, 
+et une nouvelle génération est créée en combinant les caractéristiques 
+des parents par crossover. Des mutations aléatoires sont également appliquées 
+pour introduire de la diversité.
+
+Cela se répète sur plusieurs générations jusqu'à ce qu'une solution satisfaisante 
+soit atteinte. La complexité temporelle est principalement affectée par 
+le nombre de générations, la taille de la population et les opérations de fitness, 
+sélection, crossover, et mutation.
+
+Du point de vue de la complexité spatiale, 
+la mémoire est principalement utilisée pour stocker la population, 
+les scores de fitness et les différents chromosomes. 
+Plus la population est grande, plus la complexité spatiale est élevée.
