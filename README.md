@@ -1,36 +1,26 @@
-# Knapsack Problem Solver
+# Project Title
 
-This repository contains different implementations to solve the Knapsack Problem, a classic optimization problem in computer science.
+## Description
 
-## Table of Contents
+This project implements a depth-first search (DFS) algorithm for the knapsack problem. The algorithm explores two possibilities for each item: including the item and excluding the item. It then returns the maximum value obtained from these two possibilities.
 
-- [Introduction](#introduction)
-- [Implementations](#implementations)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
+## Project Structure
 
-## Introduction
+- `genetique.py`: This file contains the implementation of the genetic algorithm.
+- `RecuitSimule.py`: This file contains the implementation of the simulated annealing algorithm.
+- `data.csv`: This file contains the data for the knapsack problem.
+- `README.md`: This file contains the documentation for the project.
 
-The Knapsack Problem involves selecting a subset of items with maximum total value, given a constraint on the total weight. Various optimization techniques are explored in this repository to find efficient solutions to the Knapsack Problem.
+## Usage
 
-## Implementations
+To use this project, call the `knapsack_dfs` function with a given capacity. The function will return the maximum value and the list of selected items.
 
-1. **Depth-First Search (DFS):**
-   - File: [knapsack_dfs.py](knapsack_dfs.py)
-   - Description: DFS-based solution exploring all possible combinations.
+## Complexity
 
-2. **Dynamic Programming:**
-   - File: [knapsack_dynamic_programming.py](knapsack_dynamic_programming.py)
-   - Description: Solution using dynamic programming for optimization.
+The time complexity of the DFS algorithm depends on the number of items and the capacity of the knapsack. In the worst case, the DFS algorithm explores all possible combinations, resulting in an exponential time complexity of O(2^n), where n is the number of items.
 
-3. **Genetic Algorithm:**
-   - File: [knapsack_genetic_algorithm.py](knapsack_genetic_algorithm.py)
-   - Description: Optimization using a genetic algorithm.
+The space complexity depends on the maximum depth of the recursive call stack, which is also exponential in the worst case.
 
-## How to Use
+## License
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/SalemTheProgrammer/Knapsack-Problem.git
+This project is licensed under the MIT License - see the LICENSE.md file for details
